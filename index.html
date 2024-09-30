@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Deletion Request | Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d9534f;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="email"], textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #c9302c;
+        }
+        .note {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Deletion Request</h1>
+        <p>If you wish to delete your Expense Tracker account and all associated data, please fill out the form below. We will process your request and notify you once the deletion is complete.</p>
+
+        <form action="mailto:drafate19@gmail.com" method="POST" enctype="text/plain">
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
+            
+            <label for="reason">Reason for Deletion (Optional)</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Enter your reason for deletion (optional)"></textarea>
+
+            <input type="submit" value="Request Account Deletion">
+        </form>
+
+        <p class="note">* By submitting this form, you confirm that you want your account and all related data to be permanently deleted. This action cannot be undone.</p>
+    </div>
+</body>
+</html>
